@@ -4,7 +4,31 @@ local lua_color = {r = 13, g = 13, b = 15}
 local obex_data = obex_fetch and obex_fetch() or {username = 'HvH Dominic', build = 'Alpha', discord='https://discord.gg/v5kkEm5p2K'}
     
 local visual_functions = {
-  --
+  indicator_bottom = 0,
+    damage_indi = "0",
+    dt_indicator_animation = 0,
+    hs_indicator_animation = 0,
+    offset = 0,
+    offset2 = 0,
+    defensive_ready = false,
+    is_defensive = false,
+    outline_text_alpha = 255,
+    text_alpha = 255,
+    is_defensive_state = false,
+    is_defensive_ticks = 0,
+    is_defensive_disable = false,
+    ticks = 0,
+    old_weapon = 0,
+    current_weapon = 0,
+    is_in_attack = false,
+    in_fire = false,
+    move = false,
+    damage_predict_string_calc = "",
+    calc_dmg = 0,
+    chance = 0,
+    bt = 0,
+    predicted_damage = 0,
+    predicted_hitgroup = 0,
 }
 
 local lua_banner = [[                                                                                                           
